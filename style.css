@@ -32,15 +32,15 @@ img {
     position: absolute;
 }
 
-#coke:hover > #coke-info{
-    display: none;
+#coke:hover > .info{
+    visibility: visible;
 }
 
 .info {
-    display: none;
-    /*word-wrap: break-word;
+    visibility: hidden;    
+    word-wrap: break-word;
     margin-top:1px;
     padding-top: 1.1em;
-    /*position:absolute;*/
+    position:absolute;
     background-color: purple;
   }
