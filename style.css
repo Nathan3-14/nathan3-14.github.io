@@ -1,33 +1,46 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background: linear-gradient(
         70deg,
         darkblue,
         lightblue
     );
+    height: 100%;
+    width: 100%;
     color: white;
 }
 
 .menu {
+    width: 500px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    border: 10px solid red;
+    border-radius: 10px;
+    padding-top: 50px;
 }
 
-#title {
-    grid-column: 2;
-    grid-row: 2;
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
 }
 
-.menu-item:hover .info {
-    display: block;
-}
-  
-.info {
-    z-index: 1;
+#coke:hover > #coke-info{
     display: none;
-    word-wrap: break-word;
+}
+
+.info {
+    display: none;
+    /*word-wrap: break-word;
     margin-top:1px;
     padding-top: 1.1em;
-    position:absolute;
+    /*position:absolute;*/
     background-color: purple;
   }
