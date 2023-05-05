@@ -1,0 +1,27 @@
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+
+    width: 200px;
+    height: 200px;
+
+    gap: 5px;
+}
+
+.menu-item {
+    background-color: aquamarine;
+    /*gap: 5px;*/
+}
+
+#sandwich {
+    grid-column: 1;
+}
+
+#coke {
+    grid-column: 2;
+}
+
+#pizza {
+    grid-column: 3;
+}
