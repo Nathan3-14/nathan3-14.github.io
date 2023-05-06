@@ -1,21 +1,62 @@
 .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /*grid-template-rows: 1fr 1fr 1fr;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 
-    width: 200px;
-    height: 200px;
+	width: 200px;
+	height: 200px;
 
-    gap: 5px;
+	gap: 5px;
 }
 
 .menu-item {
-    aspect-ratio: 1 / 1.6;
-    border: 0.5vmin solid rgb(3, 169, 244);
-    cursor: pointer;
-    position: relative;
-    width: 100px;
-  }
+    position: absolute;
+	aspect-ratio: 1 / 1.6;
+	border: 0.5vmin solid rgb(3, 169, 244);
+	cursor: pointer;
+	position: relative;
+	width: 100px;
+	display: grid;
+	place-items: center;
+	border-radius: 20px;
+}
+
+.menu-item > img {
+	border-radius: 20px;
+}
+
+.menu-item:hover {
+    width: 120px;
+}
+
+#salad {
+	grid-column: 1;
+	grid-row: 1;
+}
+#sandwich {
+	grid-column: 2;
+	grid-row: 1;
+}
+#pizza {
+	grid-column: 3;
+	grid-row: 1;
+}
+#coke {
+	grid-column: 1;
+	grid-row: 2;
+}
+#water {
+	grid-column: 2;
+	grid-row: 2;
+}
+#icecream {
+	grid-column: 1;
+	grid-row: 3;
+}
+#cake {
+	grid-column: 2;
+	grid-row: 3;
+}
 
 /*
 #sandwich {
