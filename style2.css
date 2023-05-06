@@ -6,11 +6,11 @@
 	width: 200px;
 	height: 200px;
 
-	gap: 5px;
+	gap: 30px;
+	row-gap: 45px;
 }
 
 .menu-item {
-    position: absolute;
 	aspect-ratio: 1 / 1.6;
 	border: 0.5vmin solid rgb(3, 169, 244);
 	cursor: pointer;
@@ -19,14 +19,29 @@
 	display: grid;
 	place-items: center;
 	border-radius: 20px;
+	transition: scale .5s;
 }
 
 .menu-item > img {
-	border-radius: 20px;
+	border-radius: inherit;
+	/*transition: opacity .5s;*/
 }
 
 .menu-item:hover {
-    width: 120px;
+	scale: 1.5;
+}
+
+.menu-item:hover > p {
+	opacity: 1;
+}
+
+.cover {
+	aspect-ratio: 1 / 1.6;
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 100px;
+	border-radius: inherit;
 }
 
 #salad {
@@ -57,17 +72,3 @@
 	grid-column: 2;
 	grid-row: 3;
 }
-
-/*
-#sandwich {
-    grid-column: 1;
-}
-
-#coke {
-    grid-column: 2;
-}
-
-#pizza {
-    grid-column: 3;
-}
-*/
