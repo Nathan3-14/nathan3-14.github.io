@@ -1,4 +1,6 @@
 .menu {
+	padding-top: 50px;
+
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -23,16 +25,21 @@
 }
 
 .menu-item > img {
-	border-radius: inherit;
-	/*transition: opacity .5s;*/
+    border-radius: inherit;
+}
+
+.menu-item > #title {
+	position: relative;
+    transition: bottom .5s ease 0s;
+	bottom: 0;
 }
 
 .menu-item:hover {
 	scale: 1.5;
 }
 
-.menu-item:hover > p {
-	opacity: 1;
+.menu-item:hover > #title {
+	bottom: 20px;
 }
 
 .cover {
