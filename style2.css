@@ -10,10 +10,14 @@
 }
 
 .menu-item {
-    background-color: aquamarine;
-    /*gap: 5px;*/
-}
+    aspect-ratio: 1 / 1.6;
+    border: 0.5vmin solid rgb(3, 169, 244);
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+  }
 
+/*
 #sandwich {
     grid-column: 1;
 }
@@ -25,3 +29,4 @@
 #pizza {
     grid-column: 3;
 }
+*/
