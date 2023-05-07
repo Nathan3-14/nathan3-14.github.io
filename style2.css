@@ -27,9 +27,7 @@
 	transition: scale .5s;
 }
 
-
-
-.menu-item > img {
+.menu-item > .picture {
 	aspect-ratio: 1 / 1;
 	position: relative;
 	width: 100px;
@@ -38,23 +36,18 @@
 	bottom: 0;
 }
 
+.menu-item > .icon {
+	opacity: 0;
+	transition: opacity .5s ease;
+
+	position: relative;
+	left: 35px;
+}
+
 .menu-item > #title {
 	position: relative;
     transition: bottom .5s ease 0s;
 	bottom: 0;
-}
-
-.menu-item:hover {
-	scale: 1.5;
-}
-
-.menu-item:hover > #title {
-	bottom: 25px;
-}
-
-.menu-item:hover > img {
-	width: 75px;
-	bottom: 20px;
 }
 
 .menu-item > .description {
@@ -65,6 +58,25 @@
 
 	left: 15px;
 	top: 40px;
+}
+
+
+
+.menu-item:hover {
+	scale: 1.5;
+}
+
+.menu-item:hover > #title {
+	bottom: 22px;
+}
+
+.menu-item:hover > .picture {
+	width: 75px;
+	bottom: 10px;
+}
+
+.menu-item:hover > .icon {
+	opacity: 1;
 }
 
 .menu-item:hover > .description {
