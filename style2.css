@@ -1,5 +1,6 @@
 .menu {
 	padding-top: 50px;
+	padding-left: 25px;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -29,7 +30,12 @@
 
 
 .menu-item > img {
+	aspect-ratio: 1 / 1;
+	position: relative;
+	width: 100px;
     border-radius: inherit;
+	transition: width .5s, bottom .5s;
+	bottom: 0;
 }
 
 .menu-item > #title {
@@ -43,22 +49,22 @@
 }
 
 .menu-item:hover > #title {
+	bottom: 25px;
+}
+
+.menu-item:hover > img {
+	width: 75px;
 	bottom: 20px;
 }
 
 .menu-item > .description {
-	transition: opacity 2s ease;
-	transition: top .5s ease;
+	transition: opacity .75s ease, top .5s ease;
 	opacity: 0;
 
 	position: absolute;
 
 	left: 15px;
 	top: 40px;
-	
-	
-	/*bottom: 90px;
-	left: 15px;*/
 }
 
 .menu-item:hover > .description {
@@ -96,3 +102,5 @@
 	grid-column: 2;
 	grid-row: 3;
 }
+
+/*?  CREDITS  ?*/
