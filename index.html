@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -7,18 +8,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="menu">
         <div class="menu-item" id="sandwich">
-            <p>Sandwich</p>
-            <img src="/Images/sandwich.jpg">
-            <div class="info"><p>Goodbye</p></div>
+            <p id="title">Sandwich</p>
+            <p class="description">A BLT sandwich</p>
+            <img src="/Images/sandwich.jpg" class="picture">
         </div>
+
+        <div class="menu-item" id="pizza">
+            <p id="title">Pizza</p>
+            <p class="description">A pepperoni pizza</p>
+            <img src="/Images/pizza.jpg" class="picture">
+            <div class="icons">
+                <object data="/Icons/HOLD" width="24" height="24" class="hidden"></object>
+            </div>
+        </div>
+
+        <div class="menu-item" id="salad">
+            <p id="title">Salad</p>
+            <p class="description">A basic caesar salad</p>
+            <img src="/Images/salad.jpg" class="picture">
+
+            <!-- <img src="/Icons/vegan.png" class="icon"> -->
+            <div class="icons">
+                <object data="/Icons/gluten-free.svg" width="24" height="24" class="icon"></object>
+                <object data="/Icons/vegan.svg" width="24" height="24" class="icon"></object>
+            </div>
+        </div>
+
         <div class="menu-item" id="coke">
-            <p>Coke</p>
-            <img src="/Images/coke2.jpg">
-            <div class="info"><p>Hello</p></div>
+            <p id="title">Coke</p>
+            <p class="description">A bottle of coca-cola</p>
+            <img src="/Images/coke.jpg" class="picture">
+            <div class="icons">
+                <object data="/Icons/vegan.svg" width="24" height="24" class="icon"></object>
+                <object data="/Icons/gluten-free.svg" width="24" height="24" class="icon"></object>
+            </div>
+        </div>
+
+        <div class="menu-item" id="water">
+            <p id="title">Water</p>
+            <p class="description">A bottle of water</p>
+            <img src="/Images/water.jpg" class="picture">
+            <div class="icons">
+                <object data="/Icons/gluten-free.svg" width="24" height="24" class="icon"></object>
+                <object data="/Icons/vegan.svg" width="24" height="24" class="icon"></object>
+            </div>
+        </div>
+
+        <div class="menu-item" id="icecream">
+            <p id="title">Icecream</p>
+            <p class="description">Chocolate icecream</p>
+            <img src="/Images/icecream.png" class="picture">
+            <div class="icons">
+                <object data="/Icons/gluten-free.svg" width="24" height="24" class="icon"></object>
+                <object data="/Icons/vegetarian.svg" width="24" height="24" class="icon"></object>
+            </div>
+        </div>
+
+        <div class="menu-item" id="cake">
+            <p id="title">Cake</p>
+            <p class="description">A layer cake</p>
+            <img src="/Images/cake.jpg" class="picture">
+            <div class="icons">
+                <object data="/Icons/gluten-free.svg" width="24" height="24" class="icon"></object>
+                <object data="/Icons/vegetarian.svg" width="24" height="24" class="icon"></object>
+            </div>
         </div>
     </div>
-    </body>
+</body>
+
 </html>
