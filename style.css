@@ -43,7 +43,7 @@
 
 .menu-item > .icons > .icon {
 	opacity: 0;
-	transition: opacity .5s ease;
+	transition: opacity .5s ease, scale .5s ease;
 
 	position: relative;
 	left: 35px;

@@ -1,8 +1,29 @@
-const themes = ["dark", "light"];
+// const btn = document.getElementById('submit');        
+// const radioButtons = document.querySelectorAll('input[name="theme"]');
+// btn.addEventListener("click", () => {
+//     let selectedTheme;
+//     for (const radioButton of radioButtons) {
+//         if (radioButton.checked) {
+//             selectedTheme = radioButton.value;
+//             break;
+//         }
+//     }
+//     console.log(selectedTheme);
+// });
 
-for (var i = 0; i < themes.length; i++) {
-    let theme = themes[i];
-    document.getElementById(theme).addEventListener("click", function() {
-        document.getElementById("style").href="style-"+theme+".css";
-    });
-}
+
+const radioButtons = document.querySelectorAll('input[name="theme"]');
+let selectedTheme
+setInterval(function() {
+    for (const radioButton of radioButtons) {
+        if (radioButton.checked) {
+            selectedTheme = radioButton.value;
+            break;
+    }
+    console.log(selectedTheme);};
+},500);
+
+
+// setInterval(function() {
+//     console.log("Hello, world!");
+//   }, 1000);
