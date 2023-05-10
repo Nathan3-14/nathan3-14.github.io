@@ -95,7 +95,7 @@
 }
 
 .menu-item:hover > .icons > .icon:hover {
-	opacity: 0;
+	scale: 1.5;
 	/*? DO STUFF ?*/
 }
 
