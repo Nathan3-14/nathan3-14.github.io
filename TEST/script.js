@@ -15,6 +15,7 @@ const output = document.getElementById("output");
 const radioButtons = document.querySelectorAll('input[name="theme"]');
 let selectedTheme;
 setInterval(function() {
+    let selectedTheme;
     for (const radioButton of radioButtons) {
         if (radioButton.checked) {
             selectedTheme = radioButton.value;

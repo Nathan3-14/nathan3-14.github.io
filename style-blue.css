@@ -2,3 +2,7 @@ body {
     background-color: cadetblue;
     color: white;
 }
+
+.menu-item {
+    border-color: forestgreen;
+}
