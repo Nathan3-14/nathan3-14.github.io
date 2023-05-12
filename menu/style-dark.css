@@ -1,8 +1,20 @@
 body {
-    background-color: darkslategrey;
+    background: linear-gradient(
+        to right,
+        darkslategrey,
+        lightslategrey,
+        darkslategrey
+    );
     color: white;
+    background-size: 200%;
+    animation: background-pan 25s linear infinite;
 }
 
 .menu-item {
     border-color: antiquewhite;
+}
+
+@keyframes background-pan {
+    from {background-position: 0%;}
+    to {background-position: -200%;}
 }

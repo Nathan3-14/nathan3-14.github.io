@@ -1,8 +1,20 @@
 body {
-    background-color: Ivory;
+    background: linear-gradient(
+        to right,
+        lightsteelblue,
+        slategrey,
+        lightsteelblue
+    );
     color: black;
+    background-size: 200%;
+    animation: background-pan 25s linear infinite;
 }
 
 .menu-item {
     border-color: rgb(3, 169, 244);
+}
+
+@keyframes background-pan {
+    from {background-position: 0%;}
+    to {background-position: -200%;}
 }
