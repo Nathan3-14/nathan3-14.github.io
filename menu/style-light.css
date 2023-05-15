@@ -1,9 +1,9 @@
 body {
     background: linear-gradient(
         to right,
-        lightsteelblue,
-        slategrey,
-        lightsteelblue
+        bisque,
+        cornsilk,
+        bisque
     );
     color: black;
     background-size: 200%;
