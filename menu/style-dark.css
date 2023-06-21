@@ -1,20 +1,9 @@
 body {
-    background: linear-gradient(
-        60deg,
-        darkslategrey,
-        lightslategrey,
-        darkslategrey
-    );
-    color: white;
-    background-size: 100%;
-    /*animation: background-pan 25s linear infinite;*/
+    background-color: #034748;
+    color: #11B5E4;
+    font-family: 'Fredoka';
 }
 
 .menu-item {
-    border-color: antiquewhite;
-}
-
-@keyframes background-pan {
-    from {background-position: 0%;}
-    to {background-position: -200%;}
+    border-color: #1481BA;
 }

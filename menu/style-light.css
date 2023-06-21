@@ -1,17 +1,13 @@
 body {
-    background: linear-gradient(
-        to right,
-        bisque,
-        cornsilk,
-        bisque
-    );
-    color: black;
+    background-color: #11B5E4;
+    color: #034748;
     background-size: 200%;
     animation: background-pan 25s linear infinite;
+    font-family: 'Fredoka';
 }
 
 .menu-item {
-    border-color: rgb(3, 169, 244);
+    border-color: #1481BA;
 }
 
 @keyframes background-pan {
