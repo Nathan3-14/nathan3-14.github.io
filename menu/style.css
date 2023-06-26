@@ -1,79 +1,79 @@
-.menu {
-	padding-top: 50px;
-	padding-left: 25px;
-
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-	width: 200px;
-	height: 200px;
-
-	gap: 50px;
+body {
+  font-family: "Fredoka";
 }
 
+.menu {
+  padding-top: 50px;
+  padding-left: 25px;
 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  width: 200px;
+  height: 200px;
+
+  gap: 50px;
+}
 
 .hidden {
-	opacity: 0;
+  opacity: 0;
 }
 
-
-
 .menu-item {
-	aspect-ratio: 1 / 1.6;
-	border: 0.5vmin solid rgb(3, 169, 244);
-	cursor: pointer;
-	position: relative;
-	width: 100px;
-	display: grid;
-	place-items: center;
-	border-radius: 20px;
-	transition: scale .5s;
+  aspect-ratio: 1 / 1.6;
+  border: 0.5vmin solid rgb(3, 169, 244);
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  transition: scale 0.5s;
 }
 
 .menu-item > .picture {
-	aspect-ratio: 1 / 1;
-	position: relative;
-	width: 100px;
-    border-radius: inherit;
-	transition: width .5s, bottom .5s;
-	bottom: 0;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  width: 100px;
+  border-radius: inherit;
+  transition: width 0.5s, bottom 0.5s;
+  bottom: 0;
 }
 
 .menu-item > .icons > .icon {
-	opacity: 0;
-	transition: opacity .5s ease, scale .5s ease;
+  opacity: 0;
+  transition: opacity 0.5s ease, scale 0.5s ease;
 
-	position: relative;
-	left: 35px;
+  position: relative;
+  left: 35px;
 }
 
 .menu-item > #title {
-	position: relative;
-    transition: bottom .5s ease 0s;
-	bottom: 0;
+  position: relative;
+  transition: bottom 0.5s ease 0s;
+  bottom: 0;
 }
 
 .menu-item > .description {
-	transition: opacity .75s ease, top .5s ease;
-	opacity: 0;
+  transition: opacity 0.75s ease, top 0.5s ease;
+  opacity: 0;
+  font-size: 10px;
 
-	position: absolute;
+  position: absolute;
 
-	left: 15px;
-	top: 40px;
+  left: 15px;
+  top: 40px;
 }
 
 .menu-item > .icons {
-	position: relative;
-	left: -35px;
+  position: relative;
+  left: -35px;
 }
 
-
-
 .menu-item:hover {
-	scale: 1.5;
+  scale: 1.5;
 }
 
 .menu-item:hover > #title {
@@ -81,53 +81,53 @@
 }
 
 .menu-item:hover > .picture {
-	width: 75px;
-	bottom: 4px;
+  width: 75px;
+  bottom: 4px;
 }
 
 .menu-item:hover > .icons > .icon {
-	opacity: 1;
+  opacity: 1;
 }
 
 .menu-item:hover > .description {
-	opacity: 1;
-	top: 0px;
+  opacity: 1;
+  top: 5px;
 }
 
 .menu-item:hover > .icons > .icon:hover {
-	scale: 1.5;
-	/*? DO STUFF ?*/
+  scale: 1.5;
+  /*? DO STUFF ?*/
 }
-
-
 
 #salad {
-	grid-column: 1;
-	grid-row: 1;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 11px;
 }
-#sandwich {
-	grid-column: 2;
-	grid-row: 1;
+#pasta_sausage {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 13px;
 }
 #pizza {
-	grid-column: 3;
-	grid-row: 1;
+  grid-column: 3;
+  grid-row: 1;
 }
 #coke {
-	grid-column: 1;
-	grid-row: 2;
+  grid-column: 1;
+  grid-row: 2;
 }
 #water {
-	grid-column: 2;
-	grid-row: 2;
+  grid-column: 2;
+  grid-row: 2;
 }
 #icecream {
-	grid-column: 1;
-	grid-row: 3;
+  grid-column: 1;
+  grid-row: 3;
 }
 #cake {
-	grid-column: 2;
-	grid-row: 3;
+  grid-column: 2;
+  grid-row: 3;
 }
 
 /*?  CREDITS  ?*/
