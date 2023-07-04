@@ -10,10 +10,10 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 
-  gap: 50px;
+  gap: 75px;
 }
 
 .hidden {
@@ -25,8 +25,8 @@ body {
   border: 0.5vmin solid rgb(3, 169, 244);
   cursor: pointer;
   position: relative;
-  width: 100px;
-  height: 160px;
+  width: 150px;
+  height: 240px;
   display: grid;
   place-items: center;
   border-radius: 20px;
@@ -36,7 +36,7 @@ body {
 .menu-item > .picture {
   aspect-ratio: 1 / 1;
   position: relative;
-  width: 100px;
+  width: 150px;
   border-radius: inherit;
   transition: width 0.5s, bottom 0.5s;
   bottom: 0;
@@ -81,7 +81,7 @@ body {
 }
 
 .menu-item:hover > .picture {
-  width: 75px;
+  width: 112.5px;
   bottom: 4px;
 }
 
