@@ -3,8 +3,8 @@ body {
 }
 
 .menu {
-  padding-top: 50px;
-  padding-left: 25px;
+  padding-top: 75px;
+  padding-left: 37.5px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -29,7 +29,7 @@ body {
   height: 240px;
   display: grid;
   place-items: center;
-  border-radius: 20px;
+  border-radius: 30px;
   transition: scale 0.5s;
 }
 
@@ -54,12 +54,13 @@ body {
   position: relative;
   transition: bottom 0.5s ease 0s;
   bottom: 0;
+  font-size: 20px;
 }
 
 .menu-item > .description {
   transition: opacity 0.75s ease, top 0.5s ease;
   opacity: 0;
-  font-size: 10px;
+  font-size: 15px;
 
   position: absolute;
 
@@ -102,12 +103,10 @@ body {
 #brownie {
   grid-column: 1;
   grid-row: 1;
-  font-size: 11px;
 }
 #pasta_sausage {
   grid-column: 2;
   grid-row: 1;
-  font-size: 13px;
 }
 #pizza {
   grid-column: 3;
@@ -129,5 +128,14 @@ body {
   grid-column: 2;
   grid-row: 3;
 }
+
+#brownie > #title {left: 20%;}
+#brownie > .description {top: 10px;}
+/*?#pasta_sausage > #title {left: 20%;} ?*/
+#pasta_sausage > .description {top: 15px;}
+/*? #pizza > #title {left: 20%;} *?/
+/*? #pizza > .description {top: 10px;} */
+/*? #coke > #title {left: 20%;} ?*/
+#coke > .description {top: 15px;}
 
 /*?  CREDITS  ?*/
