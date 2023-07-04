@@ -16,7 +16,7 @@ for (var i = 0; i < themes.length; i++) {
     let theme = themes[i];
     document.getElementById(theme).addEventListener('click', () => {
         document.getElementById('style').href='style-'+theme+'.css';
-        document.cookie = 'theme='+theme+'; SameSite=Strict';
+        document.cookie = 'theme='+theme+'; SameSite=Strict;max-age=2592000;';
     });
 }
 
