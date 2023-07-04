@@ -1,16 +1,18 @@
-let getCookie = (cname) => {
+const getCookie = (cname) => {
     let output = document.cookie
     .split('; ')
     .find((row) => row.startsWith(cname+'='))
     ?.split('=')[1];
     return output
-}
-
-
-document.getElementById('style').href='style-'+getCookie('theme')+'.css';
-
-
+};
 const themes = ['dark', 'light'];
+const items = ['pasta_sausage', 'brownie'];
+
+var theme_cookie = getCookie('theme');
+if (theme_cookies != null) { document.getElementById('style').href='style-'+theme_cookie+'.css'; }
+else { document.getElementById('style').href='style-light.css'; }
+
+
 
 for (var i = 0; i < themes.length; i++) {
     let theme = themes[i];
@@ -23,7 +25,6 @@ for (var i = 0; i < themes.length; i++) {
 
 
 
-const items = ['pasta_sausage', 'brownie'];
 items.forEach(item => {
     let element = document.getElementById(item);
     if (element != null) {
