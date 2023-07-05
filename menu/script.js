@@ -9,8 +9,15 @@ const themes = ['dark', 'light'];
 const items = ['pasta_sausage', 'brownie'];
 
 var theme_cookie = getCookie('theme');
-if (theme_cookies != null) { document.getElementById('style').href='style-'+theme_cookie+'.css'; }
-else { document.getElementById('style').href='style-light.css'; }
+if (theme_cookie != null) {
+    console.log('reading cookies');
+    document.getElementById('style').href='style-'+theme_cookie+'.css';
+    console.log('theme is '+theme_cookie);
+}
+// else {
+//     document.getElementById('style').href='style-light.css';
+//     console.log('no theme found');
+// }
 
 
 
@@ -18,7 +25,7 @@ for (var i = 0; i < themes.length; i++) {
     let theme = themes[i];
     document.getElementById(theme).addEventListener('click', () => {
         document.getElementById('style').href='style-'+theme+'.css';
-        document.cookie = 'theme='+theme+'; SameSite=Strict;max-age=2592000;';
+        document.cookie = 'theme='+theme+'; SameSite=strict; max-age=2592000; path=/;';
     });
 }
 

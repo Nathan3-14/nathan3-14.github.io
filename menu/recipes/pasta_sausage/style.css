@@ -1,0 +1,7 @@
+#home_button {
+	/* display: inline-block;
+    background-color: red; */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
