@@ -3,66 +3,73 @@ html {
 	height: 100%;
 }
 
-
 body {
 	background: linear-gradient(60deg, darkolivegreen, darkseagreen);
 	color: white;
+	font-family: "Fredoka";
 }
-
 
 h1 {
-    margin: auto;
-    width: fit-content;
+	margin: auto;
+	margin-top: 100px;
+	width: fit-content;
+	font-size: 50px;
 }
-
+ol, li {
+	margin: auto;
+	width: fit-content;
+}
 
 .icon-row {
 	display: flex;
 }
 
-
 .icon {
-    display: grid;
+	display: grid;
 	place-content: center;
 	text-align: center;
 	margin: 10px;
 }
 
-
 .block {
-    display: block;
+	display: block;
 	width: 200px;
-    margin: auto;
+	margin: auto;
+	margin-top: 20px;
 	border: none;
-	/* background-color: darkslategrey; */
 	background-color: seagreen;
 	padding: 14px 28px;
 	font-size: 16px;
 	cursor: pointer;
 	text-align: center;
-    transition: width .5s ease-in-out, background-color .5s ease-in-out;
-    color: white;
-    border-radius: 10px;
+	transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out,
+		font-size 0.5s ease-in-out;
+	color: white;
+	border-radius: 10px;
+	font-family: "Fredoka";
 }
 
 .block:hover {
-    width: 300px;
-    /* background-color: lightslategrey; */
-    background-color: mediumseagreen;
+	width: 300px;
+	background-color: mediumseagreen;
+	font-size: 20px;
 }
 
-
 #icon-rows {
-    margin: 5%;
+	margin: 5%;
 }
 
 #reveal-modal {
 	margin: auto;
 	display: block;
 	width: 64px;
-	
 }
 
-#answer, #hide {
+#answer {
 	margin: auto;
+}
+
+#hide {
+	margin-top: 7px;
+	margin-left: 12px;
 }
