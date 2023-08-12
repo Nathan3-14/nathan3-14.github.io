@@ -11,13 +11,14 @@ body {
 
 h1 {
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 20px;
 	width: fit-content;
 	font-size: 50px;
 }
 ol, li {
 	margin: auto;
 	width: fit-content;
+	font-size: 24px;
 }
 
 .icon-row {
@@ -39,7 +40,7 @@ ol, li {
 	border: none;
 	background-color: seagreen;
 	padding: 14px 28px;
-	font-size: 16px;
+	font-size: 24px;
 	cursor: pointer;
 	text-align: center;
 	transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out,
@@ -52,7 +53,7 @@ ol, li {
 .block:hover {
 	width: 300px;
 	background-color: mediumseagreen;
-	font-size: 20px;
+	font-size: 28px;
 }
 
 #icon-rows {
