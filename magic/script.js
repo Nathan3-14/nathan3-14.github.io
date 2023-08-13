@@ -11,13 +11,13 @@ var icon_rows = [
 ];
 
 var images = [
-    "img/banana.png",
-    "img/grapes.png",
-    "img/orange.png",
-    "img/pineapple.png",
-    "img/raspberry.png",
-    "img/strawberry.png",
-    "img/watermelon.png"
+    "img/banana",
+    "img/grapes",
+    "img/orange",
+    "img/pineapple",
+    "img/raspberry",
+    "img/strawberry",
+    "img/watermelon"
 ]
 var image = getRandomInt(images.length);
 
@@ -33,8 +33,8 @@ for (var i = 0; i < 100; i++) {
     var new_image = document.createElement("img");
     var new_text = document.createTextNode(i+1);
 
-    if ((i+1) % 9 == 0) { new_image.src = images[image] }
-    else { new_image.src = images[getRandomInt(images.length)]}
+    if ((i+1) % 9 == 0) { new_image.src = images[image]+".png" }
+    else { new_image.src = images[getRandomInt(images.length)]+".png"}
 
 
     new_div.appendChild(new_image);
@@ -52,7 +52,7 @@ for (var i = 0; i < icon_rows.length; i++) {
 
 
 document.querySelector("#reveal").addEventListener("click", () => {
-    document.querySelector("#answer").src = images[image];
+    document.querySelector("#answer").src = images[image]+"_4x.png";
     console.log('clicked');
     document.querySelector("#reveal_modal").showModal();
 

@@ -56,6 +56,29 @@ ol, li {
 	font-size: 28px;
 }
 
+.block-small {
+	display: block;
+	width: 192px;
+	margin: auto;
+	border: none;
+	background-color: seagreen;
+	padding: 14px 28px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out,
+		font-size 0.5s ease-in-out;
+	color: white;
+	border-radius: 10px;
+	font-family: "Fredoka";
+}
+
+.block-small:hover {
+	width: 256px;
+	background-color: mediumseagreen;
+}
+
+
 #icon-rows {
 	margin: 5%;
 }
@@ -63,14 +86,8 @@ ol, li {
 #reveal-modal {
 	margin: auto;
 	display: block;
-	width: 64px;
 }
 
 #answer {
 	margin: auto;
-}
-
-#hide {
-	margin-top: 7px;
-	margin-left: 12px;
 }
