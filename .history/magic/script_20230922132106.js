@@ -106,4 +106,6 @@ var run = function () {
   window.requestAnimationFrame(run);
 };
 
+c.remove()
+
 run();

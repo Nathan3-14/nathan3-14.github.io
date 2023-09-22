@@ -102,7 +102,6 @@ var run = function () {
     }
   }
   t = t + 0.025;
-  // t = t + 1000
   window.requestAnimationFrame(run);
 };
 
