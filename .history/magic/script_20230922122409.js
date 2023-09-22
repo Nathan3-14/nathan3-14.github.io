@@ -101,7 +101,7 @@ var run = function () {
       col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
     }
   }
-  t = t + 0.05;
+  t = t + 0.120;
   window.requestAnimationFrame(run);
 };
 
