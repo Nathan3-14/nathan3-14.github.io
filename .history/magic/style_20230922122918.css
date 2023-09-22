@@ -19,7 +19,7 @@ canvas {
 	height: 100vh;
 	position: absolute;
 	z-index: -10;
-	isolation: isolate;
+	isolation: isoltate;
 }
 
 h1 {
