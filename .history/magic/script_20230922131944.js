@@ -101,8 +101,8 @@ var run = function () {
       col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
     }
   }
-  t = t + 0.025;
-  // t = t + 1000
+  // t = t + 0.025;
+  t = t + 100
   window.requestAnimationFrame(run);
 };
 
