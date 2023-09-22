@@ -7,9 +7,6 @@ body {
 	background: linear-gradient(60deg, darkolivegreen, darkseagreen);
 	color: white;
 	font-family: "Fredoka";
-	width: 100%;
-	margin: 0;
-	overflow: hidden;
 }
 
 canvas {
