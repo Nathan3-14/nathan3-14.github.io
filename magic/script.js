@@ -92,6 +92,8 @@ var B = function (x, y, t) {
 };
 
 var t = 0;
+var x;
+var y;
 
 var run = function () {
   for (x = 0; x <= 35; x++) {
