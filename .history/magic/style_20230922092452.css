@@ -9,10 +9,7 @@ body {
 	font-family: "Fredoka";
 }
 
-#canv {
-	width: 100%;
-	height: 100%;
-}
+#canv
 
 h1 {
 	margin: auto;
