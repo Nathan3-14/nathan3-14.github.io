@@ -2,6 +2,8 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+var background_change = 0.04;
+
 var icon_rows = [
     document.createElement('div'),
     document.createElement('div'),
@@ -55,12 +57,27 @@ document.querySelector("#reveal").addEventListener("click", () => {
     document.querySelector("#answer").src = images[image]+"_4x.png";
     console.log('clicked');
     document.querySelector("#reveal_modal").showModal();
-
     document.querySelector("#hide").addEventListener("click", () => {
         console.log("close clicked")
         document.location.reload();
     });
 });
+
+
+document.querySelector("#bg_toggle").addEventListener("click", () => {
+  console.log("clicked");
+  console.log("background change " + background_change)
+  console.log(background_change == 0)
+  if (background_change == 0) {
+    background_change=0.04;
+    document.querySelector("#toggle").src = "svg/lightbulb-on.svg";
+  }
+  else {if (background_change == 0.04) {
+    background_change = 0;
+    document.querySelector("#toggle").src = "svg/lightbulb-off.svg";
+  }}
+});
+
 
 var c = document.getElementById("canv");
 var $ = c.getContext("2d");
@@ -101,7 +118,7 @@ var run = function () {
       col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
     }
   }
-  t = t + 0.025;
+  t = t + background_change ;
   // t = t + 1000
   window.requestAnimationFrame(run);
 };
