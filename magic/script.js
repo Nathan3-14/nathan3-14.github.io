@@ -70,11 +70,13 @@ document.querySelector("#bg_toggle").addEventListener("click", () => {
   console.log(background_change == 0)
   if (background_change == 0) {
     background_change=0.04;
-    document.querySelector("#toggle").src = "svg/lightbulb-on.svg";
+    document.querySelector(".fa-lightbulb").classList.remove('fa-regular');
+    document.querySelector(".fa-lightbulb").classList.add('fa-solid');
   }
   else {if (background_change == 0.04) {
     background_change = 0;
-    document.querySelector("#toggle").src = "svg/lightbulb-off.svg";
+    document.querySelector(".fa-lightbulb").classList.add('fa-regular');
+    document.querySelector(".fa-lightbulb").classList.remove('fa-solid');
   }}
 });
 
