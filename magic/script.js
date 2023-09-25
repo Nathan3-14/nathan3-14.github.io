@@ -1,3 +1,5 @@
+document.querySelector("#reveal_modal").close();
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
