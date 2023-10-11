@@ -1,0 +1,19 @@
+body {
+	background-color: lightblue;
+	font-family: Fredoka;
+}
+
+input {
+	background-color: #00BFFF;
+	border: 2px solid #56A0D3;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}

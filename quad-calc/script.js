@@ -27,7 +27,3 @@ for (var i = 0; i < ins.length; i++) {
     console.log(ins[i])
     ins[i].addEventListener("change", () => { calculate_equation() })
 }
-
-document.getElementById("4").addEventListener("click", () => {
-    calculate_equation()
-   })
