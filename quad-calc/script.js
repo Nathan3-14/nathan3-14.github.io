@@ -2,13 +2,14 @@ var in_1 = document.getElementById("1");
 var in_2 = document.getElementById("2");
 var in_3 = document.getElementById("3");
 
-
-var dif_1 = in_2.value - in_1.value
-var dif_2 = in_3.value - in_2.value
-var dif_dif_1 = dif_2 - dif_1
+var dif_1; var dif_2; var dif_dif_1;
 
 
 const calculate_equation = () => {
+    dif_1 = in_2.value - in_1.value
+    dif_2 = in_3.value - in_2.value
+    dif_dif_1 = dif_2 - dif_1
+
     console.log(in_1.value, in_2.value, in_3.value);
 
     var a = dif_dif_1 / 2;
