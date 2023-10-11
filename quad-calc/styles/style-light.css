@@ -1,11 +1,12 @@
 body {
 	background-color: lightblue;
 	font-family: Fredoka;
+	color: black;
 }
 
 input {
-	background-color: #00BFFF;
-	border: 2px solid #56A0D3;
+	background-color: #00bfff;
+	border: 2px solid #56a0d3;
 }
 
 input::-webkit-outer-spin-button,
