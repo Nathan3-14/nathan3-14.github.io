@@ -4,6 +4,9 @@ var in_3 = document.getElementById("3");
 
 var dif_1; var dif_2; var dif_dif_1;
 
+var a_2 = document.getElementById("a");
+var b_2 = document.getElementById("b");
+var c_2 = document.getElementById("c");
 
 const calculate_equation = () => {
     dif_1 = in_2.value - in_1.value
@@ -19,6 +22,10 @@ const calculate_equation = () => {
     console.log(b);
     var c = in_1.value - (a + b);
 
+    for (i=0; i<10; i++) {
+        document.getElementById("output2")[i] = (a * i**2) + (b * i) + (c)
+    }
+
     document.getElementById("output").innerHTML = a.toString() + "n^2 + " + b.toString() + "n + " + c.toString();
 
 }
@@ -28,3 +35,4 @@ for (var i = 0; i < ins.length; i++) {
     console.log(ins[i])
     ins[i].addEventListener("change", () => { calculate_equation() })
 }
+
