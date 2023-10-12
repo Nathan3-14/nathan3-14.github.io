@@ -23,7 +23,7 @@ const calculate_equation = () => {
     var c = in_1.value - (a + b);
 
     for (i=0; i<10; i++) {
-        console.log(i)
+        console.log("i: " + i.toString())
         document.getElementById("output2")[i] = (a * i**2) + (b * i) + (c)
     }
 
