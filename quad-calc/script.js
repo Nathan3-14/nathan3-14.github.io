@@ -22,11 +22,6 @@ const calculate_equation = () => {
     console.log(b);
     var c = in_1.value - (a + b);
 
-    for (let i=0; i < 10; i++) {
-        console.log("i: " + i.toString())
-        document.getElementById("output2")[i] = (a * i**2) + (b * i) + (c)
-    }
-
     document.getElementById("output").innerHTML = a.toString() + "n^2 + " + b.toString() + "n + " + c.toString();
 
 }
