@@ -4,10 +4,6 @@ var in_3 = document.getElementById("3");
 
 var dif_1; var dif_2; var dif_dif_1;
 
-var a_2 = document.getElementById("a");
-var b_2 = document.getElementById("b");
-var c_2 = document.getElementById("c");
-
 const calculate_equation = () => {
     dif_1 = in_2.value - in_1.value
     dif_2 = in_3.value - in_2.value
