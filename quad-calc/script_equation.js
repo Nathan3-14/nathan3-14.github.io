@@ -21,13 +21,12 @@ const calculate_equation = () => {
     for (var i = 0; i < val_ins.length; i++) {
         val_ins[i].value = abc[i];
     }
-    val_ins[0].onchange();
+    val_ins[0].calculate_sequence();
 
 }
 
 var ins = document.getElementsByClassName("num_ins")
 for (var i = 0; i < ins.length; i++) {
-    console.log(ins[i])
     ins[i].onchange = calculate_equation
 }
 
