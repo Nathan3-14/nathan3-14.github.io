@@ -27,7 +27,7 @@ const clear = () => {
 
 var ins = document.getElementsByClassName("val_ins")
 for (var i = 0; i < ins.length; i++) {
-    ins[i].onchange = () => {
+    ins[i].oninput = () => {
         calculate_sequence();
         clear();
     }

@@ -27,6 +27,6 @@ const calculate_equation = () => {
 
 var ins = document.getElementsByClassName("num_ins")
 for (var i = 0; i < ins.length; i++) {
-    ins[i].onchange = calculate_equation
+    ins[i].oninput = calculate_equation
 }
 
