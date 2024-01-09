@@ -4,19 +4,16 @@ const calculate_sequence = (in_a, in_b, in_c) => {
         a_calcd = in_a.value * (num*num)
         b_calcd = in_b.value * num
         c_calcd = in_c.value * 1
-        console.info(a_calcd)
-        console.info(b_calcd)
-        console.info(c_calcd)
-        console.info(a_calcd + b_calcd + c_calcd)
-        console.log()
         out.push(a_calcd + b_calcd + c_calcd)
     }
-    console.log(out)
+    document.getElementById("output_sequence").innerHTML = out;
 }
 
 
-var ins = document.getElementsByClassName("equ_ins");
-//calculate_sequence(ins[0], ins[1], ins[2]);
+var ins = document.getElementsByClassName("seq_ins");
 for (let index=0; index<ins.length-1; index++) {
-    ins[index].onchange = calculate_sequence(ins[0], ins[1], ins[2]);
+    const calculate_sequence_callable = () => {
+        calculate_sequence(ins[0], ins[1], ins[2]);
+    }
+    ins[index].oninput = calculate_sequence_callable;
 }
