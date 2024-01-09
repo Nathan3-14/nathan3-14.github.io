@@ -17,7 +17,7 @@
 
     <h3>Enter the first three values of the sequence:</h3>
     <div>
-        <input id="1" type="number" class="num_ins"></input>
+        <input id="1" type="number" class="num_ins" onchange="calculate_equation"></input>
         <label for="1">,</label>
         <input id="2" type="number" class="num_ins"></input>
         <label for="2">,</label>
@@ -31,16 +31,16 @@
 
     <h3>Enter the equation of the quadratic sequence</h3>
     <div>
-        <input id="a" type="number" class="val_ins"></input>
+        <input id="a" type="number" class="equ_ins"></input>
         <label for="a">n<sup>2</sup>+</label>
-        <input id="b" type="number" class="val_ins"></input>
+        <input id="b" type="number" class="equ_ins"></input>
         <label for="b">n+</label>
-        <input id="c" type="number" class="val_ins"></input>
+        <input id="c" type="number" class="equ_ins"></input>
         <label for="c"></label>
     </div>
     <p id="output_sequence">No output yet</p>
 
-    <script src="script_equation.js"></script>
+    <!-- <script src="script_equation.js"></script> -->
     <script src="script_sequence.js"></script>
 </body>
 

@@ -1,34 +1,22 @@
-var in_a = document.getElementById("a");
-var in_b = document.getElementById("b");
-var in_c = document.getElementById("c");
-
-const calculate_sequence = () => {
+const calculate_sequence = (in_a, in_b, in_c) => {
     out = [];
-    for (let i = 1; i <= 10; i++) {
-        var temp = 0;
-        temp += i**2 * parseInt(in_a.value);
-        temp += i    * parseInt(in_b.value);
-        temp +=        parseInt(in_c.value);
-        out.push(temp);
+    for (let num=1; num<=10; num++) {
+        a_calcd = in_a.value * (num*num)
+        b_calcd = in_b.value * num
+        c_calcd = in_c.value * 1
+        console.info(a_calcd)
+        console.info(b_calcd)
+        console.info(c_calcd)
+        console.info(a_calcd + b_calcd + c_calcd)
+        console.log()
+        out.push(a_calcd + b_calcd + c_calcd)
     }
-    
-    document.getElementById("output_sequence").innerHTML = out;
+    console.log(out)
 }
 
-const clear = () => {
-    var num_ins = document.getElementsByClassName("num_ins");
-    console.warn(num_ins);
-    console.warn(num_ins.length);
-    for (let i=0; i<num_ins.length; i++) {
-        console.info(num_ins[i]);
-        num_ins[i].value = " ";
-    }
-}
 
-var ins = document.getElementsByClassName("val_ins")
-for (var i = 0; i < ins.length; i++) {
-    ins[i].oninput = () => {
-        calculate_sequence();
-        clear();
-    }
+var ins = document.getElementsByClassName("equ_ins");
+//calculate_sequence(ins[0], ins[1], ins[2]);
+for (let index=0; index<ins.length-1; index++) {
+    ins[index].onchange = calculate_sequence(ins[0], ins[1], ins[2]);
 }

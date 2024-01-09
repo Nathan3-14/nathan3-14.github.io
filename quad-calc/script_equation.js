@@ -1,3 +1,5 @@
+console.log("working")
+
 var in_1 = document.getElementById("1");
 var in_2 = document.getElementById("2");
 var in_3 = document.getElementById("3");
@@ -21,12 +23,10 @@ const calculate_equation = () => {
     for (var i = 0; i < val_ins.length; i++) {
         val_ins[i].value = abc[i];
     }
-    val_ins[0].calculate_sequence();
-
 }
 
 var ins = document.getElementsByClassName("num_ins")
 for (var i = 0; i < ins.length; i++) {
-    ins[i].oninput = calculate_equation
+    ins[i].onchange = calculate_equation()
 }
 
