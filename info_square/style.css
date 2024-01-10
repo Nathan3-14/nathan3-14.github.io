@@ -26,7 +26,7 @@ body {
 .info {
     width: calc(var(--half-card-width) + 60px);
     height: calc(var(--card-height) - 10px);
-    backdrop-filter: zoom(10px);
+    backdrop-filter: none;
     transition: backdrop-filter 0.5s;
     margin: auto;
     padding: 10px;
