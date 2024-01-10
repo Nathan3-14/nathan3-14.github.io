@@ -5,7 +5,6 @@ const set_positions = () => {
     var top_margin = 0;
     for (let i=0; i<weather_icons.length; i++) {
         left_margin += 60;
-        console.log(left_margin)
         if (i % 3 == 0) {
             left_margin = 30;
             if (i != 0) {
@@ -24,7 +23,6 @@ const set_positions = () => {
     left_margin = -15;
     for (let i=0; i<temperature_icons.length; i++){
         left_margin += 45;
-        console.info(left_margin);
         temperature_icons[i].style.marginLeft = left_margin + "px";
         temperature_icons[i].style.marginTop = top_margin + "px";
     }
