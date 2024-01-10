@@ -19,7 +19,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     width: var(--card-width);
     aspect-ratio: 16/9;
-    background-image: url("./background-high_res.jpg"), url("./background-low_res.jpg");
+    background-image: url("./images/background-high_res.jpg"), url("./images/background-low_res.jpg");
     background-size: cover;
     border-radius: 10px;
     padding: 10px;
