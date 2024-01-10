@@ -2,32 +2,61 @@
     --card-width: 540px;
     --half-card-width: calc(var(--card-width)/2);
     --card-height: calc(var(--card-width)/16 * 9);
-    --half-card-width: calc(var(--card-height)/2);
+
+    --info-width: calc(var(--half-card-width) - 30px);
+    --info-height: calc(var(--card-height) - 10px);
 }
 
 body {
     background-color: cornflowerblue;
 }
 
+
+
 #card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    position: relative;
     width: var(--card-width);
     aspect-ratio: 16/9;
     background-image: url("./background-high_res.jpg"), url("./background-low_res.jpg");
     background-size: cover;
     border-radius: 10px;
     padding: 10px;
-    vertical-align: middle
 }
 
+
+
+.icon {
+    transition: color 0.5s, transform 0.5s;
+    font-size: 40px;
+    position: absolute;
+}
+
+
+#weather-icons {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#temperature-icons {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+#icons-div:hover .selected {
+    color: rgba(73, 125, 104, 0.5);
+    transform: scale(1.2);
+}
+
+
+
 .info {
-    width: calc(var(--half-card-width) + 60px);
-    height: calc(var(--card-height) - 10px);
+    width: var(--info-width);
+    height: var(--info-height);
     backdrop-filter: none;
-    transition: backdrop-filter 0.5s;
+    transition: all 0.5s;
     margin: auto;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.5);

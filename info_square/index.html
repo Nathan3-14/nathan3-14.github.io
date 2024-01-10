@@ -9,15 +9,38 @@
 </head>
 
 <body>
+    <script src="https://kit.fontawesome.com/b6a2129284.js" crossorigin="anonymous"></script>
+
     <h1>Title Goes Here</h1>
     <div id="card">
         <div class="info" id="weather-div">
-            <p class="labels" id="title">Weather</p>
+            <h2 class="labels" id="title">Weather</h2>
         </div>
-        <div class="info" id="other-div">
-            <p class="labels">1</p>
+        <div class="info" id="icons-div">
+            <div id="weather-icons">
+                <i class="fa fa-cloud icon weather_icon"              id="cloud"></i>
+                <i class="fa fa-cloud-sun icon weather_icon"          id="cloud-sun"></i>
+                <i class="fa fa-cloud-bolt icon weather_icon"         id="cloud-bolt"></i>
+                <i class="fa fa-cloud-rain icon weather_icon"         id="cloud-rain"></i>
+                <i class="fa fa-cloud-moon icon weather_icon"         id="cloud-moon"></i>
+                <i class="fa fa-cloud-moon-rain icon weather_icon"    id="cloud-moon-rain"></i>
+
+                <i class="fa fa-smog icon weather_icon"            id="smog"></i>
+                <i class="fa fa-sun icon weather_icon"             id="sun"></i>
+                <i class="fa fa-wind icon weather_icon"            id="wind"></i>
+                <i class="fa fa-bolt icon weather_icon"            id="bolt"></i>
+            </div>
+
+            <div id="temperature-icons">
+                <i class="fa fa-temperature-quarter icon temperature_icon"></i>
+                <i class="fa fa-temperature-half temperature_icon icon"></i>
+                <i class="fa fa-temperature-three-quarters temperature_icon icon"></i>
+                <i class="fa fa-temperature-full temperature_icon icon"></i>
+            </div>
         </div>
     </div>
+
+    <script src="./icon_positions.js"></script>
 </body>
 
 </html>
