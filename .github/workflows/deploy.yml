@@ -16,5 +16,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        api_key: ${{ secrets.API_KEY }}
+        deploy_key: ${{ secrets.API_KEY }}
         publish_dir: ./  # Adjust this if your build output is in a different directory
