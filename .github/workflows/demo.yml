@@ -7,8 +7,6 @@ jobs:
         steps:
             - name: Check out repo
               uses: actions/checkout@v4
-            - name: Get convert.py
-            - run: mkdir temp
-            - run: cd temp
-            - run: touch test.file
-            - run: ls
+            - run cd ${{ github.workspace }}
+            - run ls
+            
