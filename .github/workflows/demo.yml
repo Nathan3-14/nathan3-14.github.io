@@ -59,7 +59,8 @@ jobs:
         - name: Export Markdown
           run: |
             npx markmap ./output.md
-            mv ./markmap.html ./mindmaps/electricity/index.html
+            ls
+            
         
         - name: Git Setup
           run: |
