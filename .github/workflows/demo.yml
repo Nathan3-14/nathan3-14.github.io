@@ -29,9 +29,6 @@ jobs:
               run: |
                 python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yaml ./output.md
 
-            - name: Get File
-              run: |
-                ls ./mindmaps/electricity
                           
             - name: Git Setup
               run: |
