@@ -25,7 +25,7 @@ jobs:
 
             - name: Git
               run: |
-                ls ./mindmaps/electricity
+                ls ./
                 git add ./output.md
                 git commit -m "(action) Updated output.md"
                 git push origin master
