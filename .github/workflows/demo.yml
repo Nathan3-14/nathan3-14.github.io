@@ -19,13 +19,10 @@ jobs:
               run: |
                 cd ${{ github.workspace }}
                 wget -O ./mindmaps/electricity/convert.py -c https://raw.githubusercontent.com/Nathan3-14/yaml-mindmap/main/convert.py
-                echo "waiting"
-                cat ./mindmaps/electricity/convert.py
-                echo "done"
             
             - name: Execute
               run: |
-                python ./mindmaps/electricity/test-py.py a.aa aa.a
+                python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yaml ./output.md
 
             - name: Get File
               run: |
