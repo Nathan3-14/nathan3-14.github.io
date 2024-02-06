@@ -65,7 +65,7 @@ jobs:
 
             rm node_modules -r
             rm package.json
-            rm package-log.json
+            rm package-lock.json
             
         
         - name: Git Setup
