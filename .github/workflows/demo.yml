@@ -62,6 +62,10 @@ jobs:
             ls
             mv ./output.html ./mindmaps/electricity/index.html
             ls ./mindmaps/electricity
+
+            rm node_modules -r
+            rm package.json
+            rm package-log.json
             
         
         - name: Git Setup
