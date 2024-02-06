@@ -11,10 +11,11 @@ jobs:
             - name: Convert Yaml
               run: |
                 cd ${{ github.workspace }}
-                ls mindmaps/electricity
                 curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/electricity/convert.py
-                python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml ./mindmaps/electricity/output.md
-                ls ./mindmaps/electricity
+                python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml output.md
+                ls /mindmaps/electricity
+                echo "   "
+                ls
                 rm ./mindmaps/electricity/convert.py
             
             - name: Git Setup
