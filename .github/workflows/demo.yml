@@ -19,6 +19,7 @@ jobs:
               run: |
                 cd ${{ github.workspace }}
                 curl -o ./mindmaps/electricity/convert.py https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true
+                echo "waiting"
                 cat ./mindmaps/electricity/convert.py
             
             - name: Execute
