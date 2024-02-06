@@ -19,6 +19,7 @@ jobs:
               run: |
                 cd ${{ github.workspace }}
                 curl -o ./mindmaps/electricity/convert.py https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true
+                cat ./mindmaps/electricity/convert.py
             
             - name: Execute
               run: |
@@ -27,8 +28,7 @@ jobs:
             - name: Get File
               run: |
                 ls ./mindmaps/electricity
-                cat ./mindmaps/electricity/convert.py
-              
+                          
             - name: Git Setup
               run: |
                 git config user.name "GitHub Actions Bot"
