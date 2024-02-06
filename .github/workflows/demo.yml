@@ -1,0 +1,9 @@
+name: Demo
+run-name: ${{ github.actor }} demo
+on: [push]
+jobs:
+    Test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Cool test!"
+            - run: python cool_test.py
