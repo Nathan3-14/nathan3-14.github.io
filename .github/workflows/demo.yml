@@ -9,5 +9,5 @@ jobs:
               uses: actions/checkout@v4
             - run: cd ${{ github.workspace }}
             - run: cd mindmaps/electricity
-            - run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true
+            - run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo >> convert.py
             - run: ls
