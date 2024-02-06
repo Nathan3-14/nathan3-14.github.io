@@ -22,7 +22,7 @@ jobs:
             
             - name: Execute
               run: |
-                python ./mindmaps/electricity/test-py.py ./mindmaps/eletricity/electricity.yml ./output.md
+                python ./mindmaps/electricity/test-py.py a.aa aa.a
 
             - name: Get File
               run: |
