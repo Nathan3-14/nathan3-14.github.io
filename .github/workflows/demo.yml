@@ -11,8 +11,8 @@ jobs:
             - name: Convert Yaml
               run: |
                 cd ${{ github.workspace }}
-                curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/electricity/convert.py
-                python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml output.md
+                curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > ./mindmaps/electricity/convert.py
+                python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml ./output.md
                 ls ./mindmaps/electricity
                 echo "   "
                 ls
@@ -26,6 +26,6 @@ jobs:
             - name: Git
               run: |
                 ls ./mindmaps/electricity
-                git add ./mindmaps/electricity/output.md
+                git add ./output.md
                 git commit -m "(action) Updated output.md"
                 git push origin master
