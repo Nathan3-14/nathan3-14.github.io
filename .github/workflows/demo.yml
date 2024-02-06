@@ -79,4 +79,3 @@ jobs:
             git add ./mindmaps/electricity/index.html
             git commit -m "(action) Updated index.html"
             git status
-            git push
