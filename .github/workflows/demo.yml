@@ -29,7 +29,6 @@ jobs:
                 ls ./mindmaps/electricity
                 echo "   "
                 ls
-                rm ./mindmaps/electricity/convert.py
               
             - name: Git Setup
               run: |
