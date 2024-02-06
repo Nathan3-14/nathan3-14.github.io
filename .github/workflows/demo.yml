@@ -6,4 +6,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "Cool test!"
-            - run: python cool_test.py
+            - name: Check out repo code?
+            - uses: actions/checkout@v4
+            - run: ls ${{ github.workspace }}
