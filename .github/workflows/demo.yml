@@ -60,6 +60,8 @@ jobs:
           run: |
             npx markmap ./output.md
             ls
+            mv ./output.html ./mindmaps/electricity/index.html
+            ls ./mindmaps/electricity
             
         
         - name: Git Setup
