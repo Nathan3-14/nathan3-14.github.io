@@ -7,9 +7,17 @@ jobs:
         steps:
             - name: Check out repo
               uses: actions/checkout@v4
-            - run: cd ${{ github.workspace }}
-            - run: ls mindmaps/electricity
-            - run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/electricity/convert.py
-            - run: python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml ./mindmaps/electricity/output.md
-            - run: git add ./mindmaps/electricity/output.md
-            - run: git commit -m "(action) Updated output.md"
+            
+            - name: Convert Yaml
+              run: cd ${{ github.workspace }}
+              run: ls mindmaps/electricity
+              run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/electricity/convert.py
+              run: python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml ./mindmaps/electricity/output.md
+            
+            - name: Git Setup
+              run: git config user.name "GitHub Actions Bot"
+              run: git config user.email "<>"
+
+            - name: Git
+              run: git add ./mindmaps/electricity/output.md
+              run: git commit -m "(action) Updated output.md"
