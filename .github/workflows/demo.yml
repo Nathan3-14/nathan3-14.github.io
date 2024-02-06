@@ -9,3 +9,4 @@ jobs:
             - name: Check out repo code?
               uses: actions/checkout@v4
             - run: ls ${{ github.workspace }}
+            - run: python ${{ github.workspace }}/cool_test.py
