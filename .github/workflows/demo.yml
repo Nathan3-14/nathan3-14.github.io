@@ -28,3 +28,4 @@ jobs:
                 ls ./mindmaps/electricity
                 git add ./mindmaps/electricity/output.md
                 git commit -m "(action) Updated output.md"
+                git push origin master
