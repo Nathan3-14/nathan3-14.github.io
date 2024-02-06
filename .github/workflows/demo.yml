@@ -18,7 +18,7 @@ jobs:
             - name: Get File
               run: |
                 cd ${{ github.workspace }}
-                curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo >> ./mindmaps/electricity/convert.py
+                curl -o https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true ./mindmaps/electricity/convert.py
             
             - name: Execute
               run: |
