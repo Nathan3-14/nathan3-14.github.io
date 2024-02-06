@@ -43,4 +43,4 @@ jobs:
                 ls ./
                 git add ./output.md
                 git commit -m "(action) Updated output.md"
-                git push origin master
+                git push
