@@ -21,7 +21,7 @@ Electricity:
         - Bit less than smallest value in parallel
       Equation:
         - V = IR
-        - potential difference (V) = current (A) * resistance (Ω)a
+        - potential difference (V) = current (A) * resistance (Ω)
   Circuit Symbols:
     i--:
       Battery:
