@@ -23,5 +23,5 @@ jobs:
 
             - name: Git
               run: |
-                git add ./mindmaps/electricity/output.md
+                git add /mindmaps/electricity/output.md
                 git commit -m "(action) Updated output.md"
