@@ -27,8 +27,7 @@ jobs:
             - name: Get File
               run: |
                 ls ./mindmaps/electricity
-                echo "   "
-                ls
+                cat ./mindmaps/convert.py
               
             - name: Git Setup
               run: |
