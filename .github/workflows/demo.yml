@@ -2,11 +2,13 @@ name: Demo
 run-name: ${{ github.actor }} demo
 on: [push]
 jobs:
-    Test:
+    Convert yaml:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Cool test!"
-            - name: Check out repo code?
+            - name: Check out repo
               uses: actions/checkout@v4
-            - run: ls ${{ github.workspace }}
-            - run: python ${{ github.workspace }}/cool_test.py
+            - name: Get convert.py
+            - run: mkdir temp
+            - run: cd temp
+            - run: touch test.file
+            - run: ls
