@@ -8,6 +8,6 @@ jobs:
             - name: Check out repo
               uses: actions/checkout@v4
             - run: cd ${{ github.workspace }}
-            - run: ls mindmaps
-            - run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/test.py
-            - run: ls mindmaps
+            - run: ls mindmaps/electricity
+            - run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/electricity/convert.py
+            - run: python /mindmaps/electricity/convert.py /mindmaps/electricity/electricity.yml /mindmaps/electricity/output.md
