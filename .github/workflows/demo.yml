@@ -14,6 +14,7 @@ jobs:
                 ls mindmaps/electricity
                 curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/electricity/convert.py
                 python ./mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml ./mindmaps/electricity/output.md
+                ls ./mindmaps/electricity
                 rm ./mindmaps/electricity/convert.py
             
             - name: Git Setup
@@ -23,6 +24,6 @@ jobs:
 
             - name: Git
               run: |
-                ls
+                ls ./mindmaps/electricity
                 git add ./mindmaps/electricity/output.md
                 git commit -m "(action) Updated output.md"
