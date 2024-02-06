@@ -7,5 +7,5 @@ jobs:
         steps:
             - run: echo "Cool test!"
             - name: Check out repo code?
-            - uses: actions/checkout@v4
+              uses: actions/checkout@v4
             - run: ls ${{ github.workspace }}
