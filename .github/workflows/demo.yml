@@ -7,7 +7,6 @@ jobs:
         steps:
             - name: Check out repo
               uses: actions/checkout@v4
-            - run: cd ${{ github.workspace }}
-            - run: cd ./mindmaps/electricity
+            - run: cd ${{ github.workspace }}/mindmaps
             - run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > "test.py"
             - run: ls
