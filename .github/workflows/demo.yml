@@ -10,4 +10,4 @@ jobs:
             - run: cd ${{ github.workspace }}
             - run: ls mindmaps/electricity
             - run: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > mindmaps/electricity/convert.py
-            - run: python /mindmaps/electricity/convert.py /mindmaps/electricity/electricity.yml /mindmaps/electricity/output.md
+            - run: python /mindmaps/electricity/convert.py ./mindmaps/electricity/electricity.yml ./mindmaps/electricity/output.md
