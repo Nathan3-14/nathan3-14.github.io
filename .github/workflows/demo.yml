@@ -2,7 +2,7 @@ name: Demo
 run-name: Demo is cool
 on: [push]
 jobs:
-    Convert yaml:
+    Convert-yaml:
         runs-on: ubuntu-latest
         steps:
             - name: Check out repo
