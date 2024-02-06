@@ -42,29 +42,29 @@ jobs:
                 git push
     
     Convert-MD:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.x'
-      
-      - name: Install Packages
-        run: |
-          npm install markmap-cli
-      
-      - name: Export Markdown
-        run: |
-          npx markmap ./output.md
-          mv ./markmap.html ./mindmaps/electricity/index.html
-      
-      - name: Git Setup
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "nathan3-14@users.noreply.github.com"
-      
-      - name: Git
-        run: |
-          git add ./mindmaps/electricity/index.html
-          git commit -m "(action) Updated index.html"
-          git push
+      runs-on: ubuntu-latest
+      steps:
+        - name: Setup node
+          uses: actions/setup-node@v3
+          with:
+            node-version: '21.6.0'
+        
+        - name: Install Packages
+          run: |
+            npm install markmap-cli
+        
+        - name: Export Markdown
+          run: |
+            npx markmap ./output.md
+            mv ./markmap.html ./mindmaps/electricity/index.html
+        
+        - name: Git Setup
+          run: |
+            git config user.name "GitHub Actions Bot"
+            git config user.email "nathan3-14@users.noreply.github.com"
+        
+        - name: Git
+          run: |
+            git add ./mindmaps/electricity/index.html
+            git commit -m "(action) Updated index.html"
+            git push
