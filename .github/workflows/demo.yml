@@ -44,6 +44,9 @@ jobs:
     Convert-MD:
       runs-on: ubuntu-latest
       steps:
+        - name: Checkout Repo
+          uses: actions/checkout@v4
+
         - name: Setup node
           uses: actions/setup-node@v3
           with:
