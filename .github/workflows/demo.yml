@@ -1,12 +1,13 @@
 name: Demo
 run-name: Demo is cool
-on: [push]
+on: 
+  push:
+    branches: [ main ]
 jobs:
     Convert-yaml:
         runs-on: ubuntu-latest
         steps:
-            - name: Check out repo
-              uses: actions/checkout@v4
+            - uses: actions/checkout@v4
             
             - name: Convert Yaml
               run: |
