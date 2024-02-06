@@ -1,5 +1,5 @@
 name: Demo
-run-name: ${{ github.actor }} demo
+run-name: Demo is cool
 on: [push]
 jobs:
     Convert yaml:
