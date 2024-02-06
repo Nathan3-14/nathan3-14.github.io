@@ -8,4 +8,6 @@ jobs:
             - name: Check out repo
               uses: actions/checkout@v4
             - run: cd ${{ github.workspace }}
+            - run: touch test.file
+            - name: curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true
             - run: ls
