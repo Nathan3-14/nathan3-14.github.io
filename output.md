@@ -21,7 +21,7 @@
 ##### Bit less than smallest value in parallel
 #### Equation
 ##### V = IR
-##### potential difference (V) = current (A) * resistance (Ω)
+##### potential difference (V) = current (A) * resistance (Ω)a
 ## Circuit Symbols
 ### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/battery.png?raw=true) Battery
 ### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/cell.png?raw=true) Cell
