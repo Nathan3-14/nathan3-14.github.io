@@ -22,7 +22,7 @@ jobs:
             
             - name: Execute
               run: |
-                python ./mindmaps/electricity/test-py.py
+                python ./mindmaps/electricity/convert.py
 
             - name: Get File
               run: |
@@ -36,9 +36,9 @@ jobs:
                 git config user.name "GitHub Actions Bot"
                 git config user.email "<>"
 
-            # - name: Git
-            #   run: |
-            #     ls ./
-            #     git add ./output.md
-            #     git commit -m "(action) Updated output.md"
-            #     git push origin master
+            - name: Git
+              run: |
+                ls ./
+                git add ./output.md
+                git commit -m "(action) Updated output.md"
+                git push origin master
