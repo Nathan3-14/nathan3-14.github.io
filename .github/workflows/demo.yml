@@ -7,26 +7,38 @@ jobs:
     Convert-yaml:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - name: Checkout Repo
+              uses: actions/checkout@v4
             
-            - name: Convert Yaml
+            - name: Setup Python
+              uses: actions/setup-python@v2
+              with:
+                python-version: 3.10.2
+            
+            - name: Get File
               run: |
                 cd ${{ github.workspace }}
                 curl -fssL https://github.com/Nathan3-14/yaml-mindmap/blob/main/convert.py?raw=true | echo > ./mindmaps/electricity/convert.py
+            
+            - name: Execute
+              run: |
                 python ./mindmaps/electricity/test-py.py
+
+            - name: Get File
+              run: |
                 ls ./mindmaps/electricity
                 echo "   "
                 ls
                 rm ./mindmaps/electricity/convert.py
-            
+              
             - name: Git Setup
               run: |
                 git config user.name "GitHub Actions Bot"
                 git config user.email "<>"
 
-            - name: Git
-              run: |
-                ls ./
-                git add ./output.md
-                git commit -m "(action) Updated output.md"
-                git push origin master
+            # - name: Git
+            #   run: |
+            #     ls ./
+            #     git add ./output.md
+            #     git commit -m "(action) Updated output.md"
+            #     git push origin master
