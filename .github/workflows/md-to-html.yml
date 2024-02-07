@@ -1,5 +1,5 @@
-name: Demo
-run-name: Demo is cool
+name: Convert md to html
+run-name: Convert md to html
 on: 
   push:
     branches: [ main ]
