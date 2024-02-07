@@ -74,6 +74,12 @@ jobs:
             rm package-lock.json
             
         
+        - name: Git Fix
+          run: |
+            git rm --cached ./output.md
+            git reset ./output.md
+
+
         - name: Git Setup
           run: |
             git config user.name "GitHub Actions Bot"
