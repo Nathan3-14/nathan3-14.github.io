@@ -7,11 +7,12 @@ jobs:
   Fix-Html:
     runs-on: ubuntu-latest
     steps:
-    - name: Create new branch
-      run: |
-        git branch Test
-        git branch
+      - name: checkout
+        uses: actions/checkout@v4
     
-    - name: checkout
-      uses: actions/checkout@v4
+      - name: Create new branch
+        run: |
+          git branch Test
+          git branch
+    
             
