@@ -19,5 +19,6 @@ jobs:
           git add ./aaa.aaa
 
           git push -u origin Test
+          git push -m "TESTTEST"
     
             
