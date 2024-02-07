@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-with open("./index.html", "r") as f:
+with open("./mindmaps/electricity/index.html", "r") as f:
     html_code = f.read()
 
 soup = BeautifulSoup(html_code, 'lxml')
@@ -18,7 +18,7 @@ head.append(style_link)
 
 title.replace_with(new_title)
 
-with open("index.html", "w") as f:
+with open("./mindmaps/electricity/index.html", "w") as f:
     f.write(soup.prettify())
 
 print(soup.prettify())
