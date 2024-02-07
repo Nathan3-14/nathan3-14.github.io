@@ -36,6 +36,11 @@ jobs:
                 git config user.name "GitHub Actions Bot"
                 git config user.email "nathan3-14@users.noreply.github.com"
 
+            - name: Git Fix
+              run: |
+                git rm --cached ./output.md
+                git reset ./output.md
+
             - name: Git
               run: |
                 git add ./output.md
