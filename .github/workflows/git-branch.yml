@@ -15,6 +15,8 @@ jobs:
         run: |
           git branch Test
 
+          git pull
+          
           git push -u origin Test
       
       - name: extra commit
