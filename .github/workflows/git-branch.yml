@@ -16,14 +16,14 @@ jobs:
           git branch Test
 
           git pull
+
           
-          git push -u origin Test
-      
-      - name: extra commit
-        run: |
+          - name: extra commit
+          run: |
           git pull
           touch ./aaa.aaa
           git add ./aaa.aaa
           git push -m "TESTTEST"
+          git push -u origin Test
     
             
