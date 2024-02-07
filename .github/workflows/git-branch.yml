@@ -21,11 +21,11 @@ jobs:
       - name: extra commit
         run: |
           git pull
+          git push -u origin Test
 
           touch ./aaa.aaa
           git add ./aaa.aaa
           
-          git push -u origin Test
           git push -m "TESTTEST"
     
             
