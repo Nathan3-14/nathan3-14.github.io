@@ -1,7 +1,22 @@
-name: Branch Test
-run-name: Branch Test
+name: Fix HTML
+run-name: Fix HTML
 on:
-    []
+    push:
+        paths:
+            - converter/**
+        
 jobs:
-    Convert-yaml:
-        ""
+    Fix-Html:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v4
+
+            - name: Setup
+              run: |
+                cd ${{ github.workspace }}
+                python -m pip install -U pip
+                python -m pip install -r ./requirements.txt%
+            - name: Fix Mindmap
+              run: |
+                python ./mindmaps/electricity/convert-html.py
