@@ -9,10 +9,15 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-    
+      
+
       - name: Create new branch
         run: |
           git branch Test
-          git branch
+
+          touch ./aaa.aaa
+          git add ./aaa.aaa
+
+          git push -u Test -m "Test"
     
             
