@@ -10,7 +10,7 @@ jobs:
     - name: Create new branch
       run: |
         git branch Test
-        git checkout Test
+        git branch
     
     - name: checkout
       uses: actions/checkout@v4
