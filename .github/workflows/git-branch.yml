@@ -25,8 +25,8 @@ jobs:
 
       - name: aaa
         run: |
-          touch ./aaa.aaa
-          git add ./aaa.aaa
+          touch ./aaa.aa
+          git add ./aaa.aa
           
           git push -m "TESTTEST"
     
