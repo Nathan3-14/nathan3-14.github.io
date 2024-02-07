@@ -76,8 +76,8 @@ jobs:
         
         - name: Git Fix
           run: |
-            git rm --cached ./output.md
-            git reset ./output.md
+            git rm --cached ./mindmaps/electricity/index.html
+            git reset ./mindmaps/electricity/index.html
 
 
         - name: Git Setup

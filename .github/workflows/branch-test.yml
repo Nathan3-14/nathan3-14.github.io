@@ -16,7 +16,24 @@ jobs:
               run: |
                 cd ${{ github.workspace }}
                 python -m pip install -U pip
-                python -m pip install -r ./requirements.txt%
+                python -m pip install -r ./requirements.txt
             - name: Fix Mindmap
               run: |
                 python ./mindmaps/electricity/convert-html.py
+            
+            - name: Git Fix
+              run: |
+                git rm --cached ./mindmaps/electricity/index.html
+                git reset ./mindmaps/electricity/index.html
+
+
+            - name: Git Setup
+              run: |
+                git config user.name "GitHub Actions Bot"
+                git config user.email "nathan3-14@users.noreply.github.com"
+        
+            - name: Git
+              run: |
+                git add ./mindmaps/electricity/index.html
+                git commit -m "(action) Upgraded index.html"
+                git push

@@ -18,7 +18,7 @@ head.append(style_link)
 
 title.replace_with(new_title)
 
-with open("new_index.html", "w") as f:
+with open("index.html", "w") as f:
     f.write(soup.prettify())
 
 print(soup.prettify())
