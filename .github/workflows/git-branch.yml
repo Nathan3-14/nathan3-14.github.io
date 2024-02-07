@@ -18,8 +18,8 @@ jobs:
           git pull
 
           
-          - name: extra commit
-          run: |
+      - name: extra commit
+        run: |
           git pull
           touch ./aaa.aaa
           git add ./aaa.aaa
