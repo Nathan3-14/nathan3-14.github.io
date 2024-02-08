@@ -3,7 +3,7 @@ run-name: Fix HTML
 on:
     push:
         paths:
-            - mindmaps/electricity/index.html
+            - mindmaps/electricity/**
         
 jobs:
     Fix-Html:
