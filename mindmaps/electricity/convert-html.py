@@ -8,7 +8,7 @@ head = soup.find("head")
 body = soup.find("body")
 
 new_title = soup.new_tag("title")
-new_title.string = ""
+new_title.string = "Electricity"
 title = soup.find("title")
 
 style_link = soup.new_tag("link")
