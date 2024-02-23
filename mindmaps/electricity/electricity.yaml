@@ -36,3 +36,13 @@ Electricity:
     Switch:
       - Switch
       - Switch but again
+  Uk Main:
+    Data:
+      55Hz
+      240V
+      AC
+  Types of current:
+    Alternating Current (AC):
+      - Alternating current constantly switches between flowing in different directions
+    Direct Current (DC):
+      - Constantly flows in one direction
