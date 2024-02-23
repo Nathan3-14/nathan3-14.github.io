@@ -35,7 +35,6 @@ Electricity:
       - LED
     Switch:
       - Switch
-      - Switch but again
   Uk Main:
     Data:
       - 55Hz

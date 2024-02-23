@@ -2,9 +2,8 @@ name: Convert md to html
 run-name: Convert md to html
 on: 
   push:
-    branches: [ main ]
     paths:
-      - /mindmaps/electricity/**
+      - /mindmaps/**
 jobs:
     Convert-yaml:
         runs-on: ubuntu-latest
