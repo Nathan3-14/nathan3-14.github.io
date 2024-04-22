@@ -12,36 +12,25 @@
 
 <body>
     <link id="theme" rel="stylesheet" href="./styles/style-light.css">
-
     <h1>Quadratic Equation Generator</h1>
-
-    <h3>Enter the first three values of the sequence:</h3>
+    <p>Enter the first three values of the sequence:</p>
     <div>
-        <input id="1" type="number" class="equ_ins" onchange="calculate_equation"></input>
-        <label for="1">,</label>
-        <input id="2" type="number" class="equ_ins"></input>
-        <label for="2">,</label>
-        <input id="3" type="number" class="equ_ins"></input>
-        <label for="3"></label>
+        <input id="1" type="number" class="num_ins"></input>
+        <input id="2" type="number" class="num_ins"></input>
+        <input id="3" type="number" class="num_ins"></input>
     </div>
+    <p id="output">No output yet</p>
 
-    <p id="output_equation">No output yet</p>
-
-    <br>
-
-    <h3>Enter the equation of the quadratic sequence</h3>
     <div>
-        <input id="a" type="number" class="seq_ins"></input>
-        <label for="a">n<sup>2</sup>+</label>
-        <input id="b" type="number" class="seq_ins"></input>
-        <label for="b">n+</label>
-        <input id="c" type="number" class="seq_ins"></input>
-        <label for="c"></label>
+        <input id="a" type="number" class="val_ins">
+        <input id="b" type="number" class="val_ins">
+        <input id="c" type="number" class="val_ins">
     </div>
-    <p id="output_sequence">No output yet</p>
-    
-    <script src="script_equation.js"></script>
+    <p id="output_2">No output yet</p>
+    <button id="test">hi</button>
+
     <script src="script_sequence.js"></script>
+    <script src="script_equation.js"></script>
 </body>
 
 </html>
