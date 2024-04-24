@@ -4,10 +4,10 @@
 </head>
 <body>
     <p>If you are not redirected, <a id="redirect-link" href="">click here</a>.</p>
+    <button id="redirect-button">Redirect!!!!</button>
 
     <script>
         var target_location = "https://bbc.co.uk";
-        document.getElementById("redirect-link").href = target_location;
         document.getElementById("redirect-button").onclick =
             () => {
             window.replace(target_location);
