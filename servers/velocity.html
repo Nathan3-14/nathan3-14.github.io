@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
-        var location = "http://123.321.123:8080";
-        Document.getElementById("redirect-link").href = location;
-        window.location.replace("0.0.0.0:25600");
-    </script>
 </head>
 <body>
-    <p>If you are not redirected, <a id="redirect-link" ="http://123.321.123:8080">click here</a>.</p>
+    <p>If you are not redirected, <a id="redirect-link" href="">click here</a>.</p>
+
+    <script>
+        var target_location = "https://bbc.co.uk";
+        Document.getElementById("redirect-link").href = target_location;
+        document.getElementById("redirect-button").onclick =
+            () => {
+            window.replace(target_location);
+        };
+    </script>
 </body>
 </html>
