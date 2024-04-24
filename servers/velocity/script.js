@@ -1,3 +1,3 @@
-var target_location = "127.0.0.1:25570";
+var target_location = "http://127.0.0.1:25570";
 
-window.location.replace(target_location);
+window.location.assign(target_location);
