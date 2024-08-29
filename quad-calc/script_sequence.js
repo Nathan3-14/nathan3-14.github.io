@@ -1,19 +1,26 @@
-const calculate_sequence = (in_a, in_b, in_c) => {
-    out = [];
-    for (let num=1; num<=10; num++) {
-        a_calcd = in_a.value * (num*num)
-        b_calcd = in_b.value * num
-        c_calcd = in_c.value * 1
-        out.push(a_calcd + b_calcd + c_calcd)
+var in_a = document.getElementById("a");
+var in_b = document.getElementById("b");
+var in_c = document.getElementById("c");
+
+const calculate_sequence = () => {
+    var out = [];
+    for (let i=1; i < 11; i++) {
+        var temp = 0
+        temp += i**2 * parseInt(in_a.value);
+        temp += i * parseInt(in_b.value);
+        temp += parseInt(in_c.value);
+        out.push(temp);
     }
-    document.getElementById("output_sequence").innerHTML = out;
+    document.getElementById("output_2").innerHTML = out;
 }
 
+/* var ins = document.getElementsByClassName("val_ins")
+for (var i = 0; i < ins.length; i++) {
+    console.log(ins[i])
+    ins[i].addEventListener("change", () => { calculate_sequence() })
+} */
 
-var ins = document.getElementsByClassName("seq_ins");
-for (let index=0; index<ins.length-1; index++) {
-    const calculate_sequence_callable = () => {
-        calculate_sequence(ins[0], ins[1], ins[2]);
-    }
-    ins[index].oninput = calculate_sequence_callable;
-}
+document.getElementById("test").onclick = () => {
+    calculate_sequence();
+    console.log("hallo");
+};
