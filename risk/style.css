@@ -1,0 +1,40 @@
+body {
+    background-color: antiquewhite;
+    font-family: monospace;
+}
+
+input {
+    width: 40px;
+}
+
+button {
+    width: 150px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    transition: width 0.4s, background-color 0.4s;
+}
+button:hover {
+    width: 200px;
+    background-color: limegreen;
+}
+
+.result_entry {
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dice_roll {
+    font-size: 40px;
+    margin: 5px;
+}
+
+.attack {
+    color: red;
+}
+.defend {
+    color: lightskyblue;
+}

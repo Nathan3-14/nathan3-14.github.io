@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/b6a2129284.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/risk_logo.png" />
+    <h1>Odds Calculator</h1>
+    <label for="start_attack_count">Attack Count:</label>
+    <input type="number" id="start_attack_count" name="start_attack_count">
+    <label for="start_defend_count">Defend Count:</label>
+    <input type="number" id="start_defend_count" name="start_defend_count">
+
+
+    <br><button onclick="get_winner_with_values()">Calculate!</button>
+    <p id="attack_count">attack_count</p>
+    <p id="defend_count">defend_count</p>
+
+    <h2>Winner: </h2>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
