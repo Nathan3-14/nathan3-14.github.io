@@ -84,17 +84,17 @@ var get_winner = (attack_count, defend_count) => {
         results(attack_dice_rolls, defend_dice_rolls, attack_losses, defend_losses)
     }
     
-    document.getElementById("attack_count").innerHTML = current_attack_count.toString()
-    document.getElementById("defend_count").innerHTML = current_defend_count.toString()
+    document.getElementById("attack_count").innerHTML = `Attack's troop count: ${current_attack_count.toString()}`
+    document.getElementById("defend_count").innerHTML = `Defend's troop count: ${current_defend_count.toString()}`
 
-    var winner;
+    var winner
     if (current_defend_count == 0) {
         winner = "attack"
     } else {
         winner = "defend"
     }
 
-    document.getElementById("winner").innerHTML = `Winner: ${winner}`
+    document.getElementById("winner").innerHTML = `${winner} wins!`
 }
 
 

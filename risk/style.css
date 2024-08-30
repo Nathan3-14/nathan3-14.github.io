@@ -7,6 +7,11 @@ input {
     width: 40px;
 }
 
+#title {
+    width: 80%;
+    max-width: 500px;
+}
+
 button {
     width: 150px;
     background-color: green;
