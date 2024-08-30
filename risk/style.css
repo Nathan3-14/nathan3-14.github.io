@@ -4,37 +4,6 @@ body {
     width: 100%;
 }
 
-#rect1 {
-    width: 100%;
-    height: 10px;
-    background-color: red;
-}
-#rect2 {
-    width: 90%;
-    height: 10px;
-    background-color: blue;
-}
-#rect3 {
-    width: 80%;
-    height: 10px;
-    background-color: red;
-}
-#rect4 {
-    width: 70%;
-    height: 10px;
-    background-color: blue;
-}
-#rect5 {
-    width: 60%;
-    height: 10px;
-    background-color: red;
-}
-#rect6 {
-    width: 50%;
-    height: 10px;
-    background-color: blue;
-}
-
 input {
     width: 40px;
 }
