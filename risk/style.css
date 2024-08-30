@@ -1,6 +1,7 @@
 body {
     background-color: antiquewhite;
     font-family: monospace;
+    width: 100%;
 }
 
 input {
