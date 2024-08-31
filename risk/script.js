@@ -10,7 +10,7 @@ var capitalize = (string) => {
 function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
     console.log("resulting")
     var roll_numbers = ["one", "two", "three", "four", "five", "six"]
-
+    
     var result_div = document.createElement("div")
     result_div.classList.add("result_entry")
     var result_title = document.createElement("h1")
@@ -19,7 +19,7 @@ function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
     comparison_text.innerHTML = "vs"
     var losses = document.createElement("h3")
     losses.innerHTML = `Attack lost ${attack_losses}, Defend lost ${defend_losses}`
-
+    
     var result_attack_rolls = document.createElement("div")
     for (let i = 0; i<attack_rolls.length; i++) {
         var roll = document.createElement("i")
@@ -34,15 +34,16 @@ function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
     }
     result_div.append(result_title, result_attack_rolls, comparison_text, result_defend_rolls, losses)
     document.getElementById("results").append(result_div, document.createElement("br"))
-
+    
 }
 
 
 var get_winner = (attack_count, defend_count) => {
+    document.getElementById("results").innerHTML = ""
     var current_attack_count = attack_count - 1
     var current_defend_count = defend_count
-
-
+    
+    
     while (current_attack_count > 0 && current_defend_count > 0) {
         console.log()
         console.log()
