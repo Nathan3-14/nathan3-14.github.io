@@ -28,8 +28,9 @@ function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
         roll.classList.add("fa-solid", `fa-dice-${roll_numbers[defend_rolls[i]-1]}`, "dice_roll", "defend")
         result_defend_rolls.append(roll)
     }
-    result_div.append(result_title, result_attack_rolls, comparison_text, result_defend_rolls ,losses)
-    document.body.append(result_div)
+    result_div.append(result_title, result_attack_rolls, comparison_text, result_defend_rolls, losses)
+    document.getElementById("results").append(result_div, document.createElement("br"))
+
 }
 
 
@@ -84,8 +85,8 @@ var get_winner = (attack_count, defend_count) => {
         results(attack_dice_rolls, defend_dice_rolls, attack_losses, defend_losses)
     }
     
-    document.getElementById("attack_count").innerHTML = `Attack's troop count: ${current_attack_count.toString()}`
-    document.getElementById("defend_count").innerHTML = `Defend's troop count: ${current_defend_count.toString()}`
+    document.getElementById("attack_count").innerHTML = `Attack has ${current_attack_count.toString()} troops left`
+    document.getElementById("defend_count").innerHTML = `Defend has ${current_defend_count.toString()} troops left`
 
     var winner
     if (current_defend_count == 0) {
