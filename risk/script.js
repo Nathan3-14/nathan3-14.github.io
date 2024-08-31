@@ -7,7 +7,7 @@ var capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
+function results(attack_rolls, defend_rolls, attack_losses, defend_losses, attack_current, defend_current) {
     console.log("resulting")
     var roll_numbers = ["one", "two", "three", "four", "five", "six"]
     
@@ -19,6 +19,8 @@ function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
     comparison_text.innerHTML = "vs"
     var losses = document.createElement("h3")
     losses.innerHTML = `Attack lost ${attack_losses}, Defend lost ${defend_losses}`
+    var current = document.createElement("h3")
+    current.innerHTML = `Attack at ${attack_current}, Defend at ${defend_current}`
     
     var result_attack_rolls = document.createElement("div")
     for (let i = 0; i<attack_rolls.length; i++) {
@@ -32,7 +34,7 @@ function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
         roll.classList.add("fa-solid", `fa-dice-${roll_numbers[defend_rolls[i]-1]}`, "dice_roll", "defend")
         result_defend_rolls.append(roll)
     }
-    result_div.append(result_title, result_attack_rolls, comparison_text, result_defend_rolls, losses)
+    result_div.append(result_title, result_attack_rolls, comparison_text, result_defend_rolls, losses, current)
     document.getElementById("results").append(result_div, document.createElement("br"))
     
 }
@@ -87,7 +89,7 @@ var get_winner = (attack_count, defend_count) => {
         current_attack_count -= attack_losses
         current_defend_count -= defend_losses
 
-        results(attack_dice_rolls, defend_dice_rolls, attack_losses, defend_losses)
+        results(attack_dice_rolls, defend_dice_rolls, attack_losses, defend_losses, current_attack_count, current_defend_count)
     }
     
     document.getElementById("attack_count").innerHTML = `Attack has ${current_attack_count.toString()} troops left`
