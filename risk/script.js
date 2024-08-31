@@ -20,7 +20,7 @@ function results(attack_rolls, defend_rolls, attack_losses, defend_losses, attac
     var losses = document.createElement("h3")
     losses.innerHTML = `Attack lost ${attack_losses}, Defend lost ${defend_losses}`
     var current = document.createElement("h3")
-    current.innerHTML = `Attack at ${attack_current}, Defend at ${defend_current}`
+    current.innerHTML = `Attack now at ${attack_current}, Defend now at ${defend_current}`
     
     var result_attack_rolls = document.createElement("div")
     for (let i = 0; i<attack_rolls.length; i++) {
