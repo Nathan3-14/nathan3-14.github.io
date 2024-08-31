@@ -3,6 +3,10 @@ var dice = () => {
 }
 var range = [1, 2, 3, 4]
 
+var capitalize = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function results(attack_rolls, defend_rolls, attack_losses, defend_losses) {
     console.log("resulting")
     var roll_numbers = ["one", "two", "three", "four", "five", "six"]
@@ -95,7 +99,7 @@ var get_winner = (attack_count, defend_count) => {
         winner = "defend"
     }
 
-    document.getElementById("winner").innerHTML = `${winner} wins!`
+    document.getElementById("winner").innerHTML = `${capitalize(winner)} wins!`
 }
 
 
