@@ -13,4 +13,4 @@ var selected_theme = "light"
 theme_change_button.onclick = change_theme
 theme_change_button.innerHTML = "Change Theme"
 
-document.body.appendChild(theme_change_button)
+document.getElementById("main").prepend(theme_change_button)
