@@ -1,0 +1,23 @@
+body {
+    background-color: antiquewhite;
+}
+
+.result_entry {
+    border: 3px solid darkslategrey;
+}
+
+button {
+    background-color: green;
+}
+
+button:hover {
+    background-color: limegreen;
+}
+
+.attack {
+    color: red;
+}
+
+.defend {
+    color: lightskyblue;
+}
