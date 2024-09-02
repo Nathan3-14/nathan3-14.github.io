@@ -105,7 +105,6 @@ var get_winner = (attack_count, defend_count) => {
     document.getElementById("winner").innerHTML = `<span class="${winner}">${capitalize(winner)}</span> wins!`
 }
 
-
 var get_winner_with_values = () => {
     get_winner(
         document.getElementById("start_attack_count").value,

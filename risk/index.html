@@ -11,9 +11,10 @@
         <img src="images/risk_logo.png" id="title" />
         <h1>Odds Calculator</h1>
         <label for="start_attack_count">Attacker's country's troop count:</label>
-        <input type="number" id="start_attack_count" name="start_attack_count">
+        <input type="number" id="start_attack_count" name="start_attack_count" oninput="get_probabilities()">
         <label for="start_defend_count">Defender's country's troop count:</label>
-        <input type="number" id="start_defend_count" name="start_defend_count">
+        <input type="number" id="start_defend_count" name="start_defend_count" oninput="get_probabilities()">
+        <p id="win_probability">attack's win probability</p>
     
     
         <br><button onclick="get_winner_with_values()">Calculate!</button>
@@ -29,6 +30,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-dark.css" id="theme">
     <script src="script.js"></script>
+    <script src="get_odds.js"></script>
     <script src="theme-selector.js"></script>
 </body>
 </html>
