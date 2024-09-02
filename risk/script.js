@@ -7,7 +7,7 @@ var capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function results(attack_rolls, defend_rolls, attack_losses, defend_losses, attack_current, defend_current) {
+var results = (attack_rolls, defend_rolls, attack_losses, defend_losses, attack_current, defend_current) => {
     console.log("resulting")
     var roll_numbers = ["one", "two", "three", "four", "five", "six"]
     
@@ -92,7 +92,7 @@ var get_winner = (attack_count, defend_count) => {
         results(attack_dice_rolls, defend_dice_rolls, attack_losses, defend_losses, current_attack_count, current_defend_count)
     }
     
-    document.getElementById("attack_count").innerHTML = `Attack has ${current_attack_count.toString()} troops left`
+    document.getElementById("attack_count").innerHTML = `Attack has ${Math.min(current_attack_count, 3).toString()} troops attacking and ${(current_attack_count - Math.min(current_attack_count, 3)+1).toString()} left defending`
     document.getElementById("defend_count").innerHTML = `Defend has ${current_defend_count.toString()} troops left`
 
     var winner
