@@ -43,3 +43,7 @@ button:hover {
     font-size: 40px;
     margin: 5px;
 }
+
+#disclaimer {
+    font-size: 9px;
+}
