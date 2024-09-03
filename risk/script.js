@@ -3,6 +3,10 @@ var dice = () => {
 }
 var range = [1, 2, 3, 4]
 
+var clear_results = () => {
+    document.getElementByID("results").innerHTML = ""
+}
+
 var capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
