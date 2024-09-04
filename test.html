@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Self Reference</title>
+</head>
+<body>
+
+<!-- Button element -->
+<button id="myButton" onclick="handleClick(this)">Click Me</button>
+
+<!-- JavaScript function -->
+<script>
+function handleClick(buttonElement) {
+    // Access the button's properties via the buttonElement parameter
+    const buttonId = buttonElement.id;
+    const buttonText = buttonElement.innerText;
+
+    // Log the button's properties
+    console.log('Button ID:', buttonId);
+    console.log('Button Text:', buttonText);
+}
+</script>
+
+</body>
+</html>
