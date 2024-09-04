@@ -1,5 +1,6 @@
 var elements = document.getElementsByClassName("link")
 
+
 for (i=0; i<elements.length-1; i++) {
     var element = elements[i]
     console.log(element.id)
