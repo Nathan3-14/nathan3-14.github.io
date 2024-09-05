@@ -4,7 +4,7 @@ var dice = () => {
 var range = [1, 2, 3, 4]
 
 var clear_results = () => {
-    document.getElementByID("results").innerHTML = ""
+    document.getElementById("results").innerHTML = ""
 }
 
 var capitalize = (string) => {
