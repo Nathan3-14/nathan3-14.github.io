@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+</head>
+<body>
+    <style>
+        body {
+            background: linear-gradient(270deg, #a24bcf, #4b79cf, #4bc5cf);
+            background-size: 600% 600%;
+
+            -webkit-animation: AnimationName 59s ease infinite;
+            -moz-animation: AnimationName 59s ease infinite;
+            animation: AnimationName 59s ease infinite;
+        }
+
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    </style>
+</body>
+</html>
