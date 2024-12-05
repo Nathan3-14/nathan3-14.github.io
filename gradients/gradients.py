@@ -21,7 +21,7 @@ if __name__ == "__main__":
             f.write(template.replace("'#~acoloursa~#'", colour_set))
 
         home_page = []
-        with open("index.html", "r") as f:
+        with open("index-backup.html", "r") as f:
             home_page = f.readlines()
         home_page.insert(8, f"\t<div id={new_path} class=\"gradient-button\"></div>\n")
         with open("index.html", "w") as f:
