@@ -1,0 +1,9 @@
+#a24bcf, #4b79cf, #4bc5cf
+#ad5389, #3c1053
+#659999, #f4791f
+#fffbd5, #b20a2c
+#03001e, #7303c0, #ec38bc, #fdeff9
+#283c86, #45a247
+#a1ffce, #faffd1
+#ffd89b, #19547b
+#00bf8f, #001510
