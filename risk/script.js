@@ -53,8 +53,8 @@ var get_winner = (attack_count, defend_count) => {
     while (current_attack_count > 0 && current_defend_count > 0) {
         console.log()
         console.log()
-        attack_dice_count = Math.min(current_attack_count, 3)
-        defend_dice_count = Math.min(current_defend_count, 2)
+        attack_dice_count = Math.min(current_attack_count, 3) // Caps attacking dice at 3
+        defend_dice_count = Math.min(current_defend_count, 2) // Caps defending dice at 2
 
         console.log(`Attacking with ${attack_dice_count} dice`)
         console.log(`Defending with ${defend_dice_count} dice`)
@@ -64,14 +64,14 @@ var get_winner = (attack_count, defend_count) => {
         attack_dice_rolls = Array.from(
             {length: attack_dice_count},
             () => dice()
-        );
-        attack_dice_rolls.sort((a, b) => b - a)
+        ); // Generates dice rolls for attacks (up to 3 as defined earlier)
+        attack_dice_rolls.sort((a, b) => b - a) // Sorts highest to lowest
 
         defend_dice_rolls = Array.from(
             {length: defend_dice_count},
             () => dice()
-        );
-        defend_dice_rolls.sort((a, b) => b - a)
+        ); // Generates dice rolls for attacks (up to 3 as defined earlier)
+        defend_dice_rolls.sort((a, b) => b - a) // Sorts highest to lowest
 
         console.log(`Attack rolls ${attack_dice_rolls}`)
         console.log(`Defend rolls ${defend_dice_rolls}`)
@@ -79,9 +79,12 @@ var get_winner = (attack_count, defend_count) => {
         
         var attack_losses = 0
         var defend_losses = 0
-        for (let index = 0; index < Math.min(attack_dice_count, defend_dice_count); index++) {
+        for (let index = 0; index < Math.min(attack_dice_count, defend_dice_count); index++) { // See equivalent.md
+            // Fetch current rolls
             current_attack_roll = attack_dice_rolls[index]
             current_defend_roll = defend_dice_rolls[index]
+
+            // Work out result
             if (current_attack_roll > current_defend_roll) {
                 console.log(`${current_attack_roll} (attack) vs ${current_defend_roll} (defend) ATTACK WINS`)
                 defend_losses += 1
@@ -93,7 +96,7 @@ var get_winner = (attack_count, defend_count) => {
         current_attack_count -= attack_losses
         current_defend_count -= defend_losses
 
-        results(attack_dice_rolls, defend_dice_rolls, attack_losses, defend_losses, current_attack_count, current_defend_count)
+        results(attack_dice_rolls, defend_dice_rolls, attack_losses, defend_losses, current_attack_count, current_defend_count) // Creates a result window at the bottom of the page
     }
     
     document.getElementById("attack_count").innerHTML = `Attack has ${Math.min(current_attack_count, 3).toString()} troops attacking and ${(current_attack_count - Math.min(current_attack_count, 3)+1).toString()} left defending`
