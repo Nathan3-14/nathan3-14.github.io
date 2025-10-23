@@ -1,0 +1,10 @@
+body {
+    font-family: 'Franklin Gothic Medium';
+    background-image: url(https://wiki.bloodontheclocktower.com/skins/pivot/assets/images/background.jpg);
+    color: white;
+}
+
+a {
+    color: wheat;
+    text-decoration: none;
+}
